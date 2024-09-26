@@ -2,3 +2,5 @@
 .sequelizerc
 package-lock.json
 node_modules
+src/migrations
+src/models

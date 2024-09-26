@@ -1,5 +1,5 @@
 //home controllers
-function home(req, res) {
+const home = (req, res) => {
     res.render('home');
 };
 

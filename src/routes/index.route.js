@@ -1,16 +1,17 @@
 const express = require('express');
 
 const home = require('./home.route');
-const admin = require('./admin.route');
-const cart = require('./cart.route');
-const detail_item = require('./detail_item.route');
-const login = require('./login.route');
-const pay = require('./pay.route');
-const register = require('./register.route');
-const transport = require('./transport.route');
+const userInfor = require('./userinfor.route');
+const userFee = require('./userfee.route');
+const userPoint = require('./userpoint.route');
+
 
 function routes(app) {
     app.use('/home', home);
+    app.use('/userinfor', userInfor);
+    app.use('/userfee', userFee);
+    app.use('/userpoint', userPoint);
+
     //     app.use('/admin', admin);
     //     app.use('/cart', cart);
     //     app.use('/item', detail_item);
